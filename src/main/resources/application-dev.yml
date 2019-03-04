@@ -1,0 +1,21 @@
+#开发环境配置文件
+server:
+  port: 8080
+  servlet:
+    context-path: /bootProject
+
+name: ligangggang
+age: 25
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: 123456lgg
+    #如果通过jpa在数据库中建表，将jpa.hibernate,ddl-auto改为create，建完表之后，要改为update,要不然每次重启工程会删除表并新建。
+    #这里不需要设置为create，因为我们不需要通过jpa建表，直接在数据库建表
+  jpa:
+    hibernate:
+      ddl-auto: update  # 第一次简表create  后面用update
+    show-sql: true  #显示后台处理是sql语句
+
