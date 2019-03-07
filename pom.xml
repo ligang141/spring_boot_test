@@ -12,7 +12,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>spring-boot-myfirstapplication</artifactId>
-   <!-- <packaging>war</packaging> -->
+    <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-boot-myfirstapplication</name>
     <description>Demo project for Spring Boot</description>
@@ -65,12 +65,12 @@
             <version>1.0.29</version>
         </dependency>
 
-        <!--把内置的tomcat给注释掉
+        <!--把内置的tomcat给注释掉-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
-        </dependency>-->
+        </dependency>
 
     </dependencies>
 
